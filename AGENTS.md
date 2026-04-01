@@ -8,6 +8,7 @@ This is a **client-side React SPA** (no backend) that talks directly to the GitL
 
 - `pnpm dev` starts the Vite dev server on port 5173 (add `--host 0.0.0.0` if external access is needed).
 - The app requires a valid **GitLab personal access token** with `read_api` scope entered at the login screen. Without a real token, the app loads but API calls return 401.
+- The secret `GITLAB_API_TOKEN` is configured in the Cloud Agent environment. To test the full flow via `computerUse`, read the token from the environment (`echo $GITLAB_API_TOKEN`) and paste it into the login field.
 
 ### Key commands
 
